@@ -10,7 +10,7 @@
         <div class="top">
             <div class="d-flex gap-4 flex-column">
                 @if($property->is_featured)
-                    <span class="flag-tag success">{{ __('Featured') }}</span>
+                    <span class="flag-tag featured">{{ __('Featured') }}</span>
                 @endif
                 {!! BaseHelper::clean($property->status->toHtml()) !!}
             </div>

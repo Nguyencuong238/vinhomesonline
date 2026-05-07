@@ -674,6 +674,11 @@
         color: $white;
         background-color: $success;
     }
+
+    &.featured {
+        color: $white;
+        background-color: $critical;
+    }
 }
 
 .info-box {

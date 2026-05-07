@@ -14,7 +14,7 @@
                                     <div class="content-property">
                                         <div class="box-tag">
                                             @if($property->is_featured)
-                                                <span class="flag-tag success">{{ __('Featured') }}</span>
+                                                <span class="flag-tag featured">{{ __('Featured') }}</span>
                                             @endif
                                             {!! BaseHelper::clean($property->status->toHtml()) !!}
                                         </div>

@@ -11,7 +11,7 @@
             <div class="top">
                 <div class="d-flex gap-8">
                     @if($project->is_featured)
-                        <span class="flag-tag success">{{ __('Featured') }}</span>
+                        <span class="flag-tag featured">{{ __('Featured') }}</span>
                     @endif
                 </div>
                 @if (RealEstateHelper::isEnabledWishlist())

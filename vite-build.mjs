@@ -33,7 +33,7 @@ import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
 import rtlcss from 'rtlcss'
-import { glob } from 'node:fs/promises'
+import { glob } from 'glob'
 import { dirname, resolve, join, relative } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { mkdir, writeFile, copyFile, readFile } from 'node:fs/promises'
@@ -77,7 +77,8 @@ async function main() {
 // ============================================================================
 async function discoverPackages() {
     const found = []
-    for await (const file of glob('platform/*/*/vite.build.mjs', { cwd: REPO_ROOT })) {
+    const files = await glob('platform/*/*/vite.build.mjs', { cwd: REPO_ROOT })
+    for (const file of files) {
         const dir = dirname(file)
         const moduleUrl = pathToFileURL(resolve(REPO_ROOT, file)).href
         const spec = (await import(moduleUrl)).default

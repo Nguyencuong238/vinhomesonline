@@ -3,7 +3,7 @@
     $canRenderAnnouncements = is_plugin_active('announcement') && $announcements && \ArchiElite\Announcement\Models\Announcement::query()->exists();
 @endphp
 
-<div class="top-header">
+<div class="top-header d-none">
     <div class="top-header-left">
         @if($canRenderAnnouncements)
             {!! $announcements !!}

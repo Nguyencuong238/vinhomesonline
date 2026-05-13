@@ -72,7 +72,6 @@
 
     .img-style {
         position: relative;
-        height: 280px;
     }
 
     .date-post {
@@ -2515,6 +2514,11 @@
         margin-bottom: 0;
         display: flex;
         flex-direction: column;
+
+        .img-style {
+            position: relative;
+            height: 280px;
+        }
     }
 }
 

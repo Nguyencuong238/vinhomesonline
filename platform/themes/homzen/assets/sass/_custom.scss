@@ -1013,6 +1013,9 @@ svg {
     .box-location {
         .image {
             all: unset;
+            img {
+                height: 280px;
+            }
         }
     }
 }

@@ -11,7 +11,7 @@
 
 @if ($showBreadcrumb === 'yes')
     <section class="flat-title-page style-2 position-relative" @style(["background-color: $backgroundColor" => $backgroundColor != 'transparent', "background-image: url($backgroundImage); background-size: cover; background-position: center" => $backgroundImage])>
-        <div class="container postion-relative" style="z-index: 1;">
+        <div class="container">
             <ul class="breadcrumb">
                 @foreach(Theme::breadcrumb()->getCrumbs() as $crumb)
                     <li>

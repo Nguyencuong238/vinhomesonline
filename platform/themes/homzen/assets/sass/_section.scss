@@ -57,6 +57,10 @@
         .breadcrumb {
             margin-top: 0;
         }
+        h1 {
+            position: relative;
+            z-index: 10;
+        }
     }
     .overlay {
         bottom: 0;

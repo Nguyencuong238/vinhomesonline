@@ -421,6 +421,7 @@
     .h2 {
         margin-top: 12px;
         margin-bottom: 16px;
+        font-size: 24px;
     }
 
     .post-navigation {
@@ -457,6 +458,10 @@
             font-size: 16px;
             line-height: 26px;
             letter-spacing: 0.8px;
+        }
+
+        .h7 {
+            font-size: 18px;
         }
     }
 
@@ -517,6 +522,7 @@
     letter-spacing: 0.8px;
     font-family: $font-2;
     font-weight: 600;
+    border-radius: 4px;
 
     &:hover {
         background-color: $primary;
@@ -537,6 +543,14 @@
 
     .flat-blog-item {
         margin-bottom: 0;
+
+        .img-style {
+            display: block;
+
+            img {
+                height: 260px;
+            }
+        }
     }
 }
 

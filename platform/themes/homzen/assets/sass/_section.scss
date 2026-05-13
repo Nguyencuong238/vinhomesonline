@@ -72,6 +72,7 @@
 
     .img-style {
         position: relative;
+        height: 280px;
     }
 
     .date-post {
@@ -2511,6 +2512,8 @@
 .flat-latest-new {
     .flat-blog-item {
         margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
     }
 }
 

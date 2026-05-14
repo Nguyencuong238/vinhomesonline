@@ -1245,7 +1245,7 @@
         left: 16px;
         right: 16px;
         z-index: 12;
-        padding: 17px 24px;
+        padding: 15px 20px;
         border-radius: 12px;
         @include transition6;
 
@@ -1258,6 +1258,8 @@
 
         .title {
             color: $white;
+            font-size: 30px;
+            margin-bottom: 0;
             @include transition6;
         }
     }
